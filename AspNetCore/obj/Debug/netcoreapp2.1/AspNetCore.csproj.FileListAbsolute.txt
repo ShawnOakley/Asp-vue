@@ -4,3 +4,13 @@
 /Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorAssemblyInfo.cs
 /Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfoInputs.cache
 /Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfo.cs
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/x86/sqlite3.dll
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/x64/sqlite3.dll
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/AspNetCore.deps.json
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/AspNetCore.runtimeconfig.json
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/AspNetCore.runtimeconfig.dev.json
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/AspNetCore.dll
+/Users/shawnoakley/asp-vue/AspNetCore/bin/Debug/netcoreapp2.1/AspNetCore.pdb
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorTargetAssemblyInfo.cache
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.dll
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.pdb

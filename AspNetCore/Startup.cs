@@ -11,6 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using AspNetCore.Controllers;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AspNetCore
 {
@@ -28,7 +31,7 @@ namespace AspNetCore
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            serviceAddDbContext<ApplicationDbContext>(options => options.UseSqlite(connectionString));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(connectionString));
             
             services.AddCors(options => {
                 options.AddPolicy("VueCorsPolicy", builder => 
@@ -38,8 +41,8 @@ namespace AspNetCore
                         .AllowAnyMethod()
                         .AllowCredentials()
                         .WithOrigins("http://localhost:8080");
-                })
-            })
+                });
+            });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -50,7 +53,7 @@ namespace AspNetCore
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ApplicationDbContext dbContext)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -62,7 +65,13 @@ namespace AspNetCore
             }
 
             app.UseHttpsRedirection();
-            dbContext.Database.EnsureCreated();
+
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                var dbContext = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
+                // Seed the database.
+                dbContext.Database.EnsureCreated();
+            }            
             app.UseAuthentication();
             app.UseMvc();
             app.UseCors("VueCorsPolicy");

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNetCore.Controller {
+namespace AspNetCore.Controllers {
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)

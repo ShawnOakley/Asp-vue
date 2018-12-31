@@ -6,5 +6,5 @@ public class FoodRecord
 
   public decimal Value { get; set; }
 
-  public DateTime DateTime { get; set; }
+  public System.DateTime DateTime { get; set; }
 }
