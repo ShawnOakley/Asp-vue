@@ -1,0 +1,6 @@
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.csprojAssemblyReference.cache
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.csproj.CoreCompileInputs.cache
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorAssemblyInfo.cache
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorAssemblyInfo.cs
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfoInputs.cache
+/Users/shawnoakley/asp-vue/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfo.cs
